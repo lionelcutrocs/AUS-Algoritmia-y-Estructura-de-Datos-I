@@ -43,4 +43,4 @@ auxSum :: Int -> Int
 auxSum x = x + 2
 
 sumInte :: (Int -> Int) -> (Int -> Int)
-sumInte p x = p (p x)
+sumInte p x = p (p x) 
