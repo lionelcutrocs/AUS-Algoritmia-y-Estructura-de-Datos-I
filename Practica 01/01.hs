@@ -70,16 +70,3 @@ myMax x y z
 --                                           -- swap ya se encuentra definido dentro del haskell
 myswap :: (b, a) -> (a, b)                   -- toma un b,a y devuelve un a,b. invierte las posiciones en la Tupla
 myswap (x, y) = (y, x)
-
------------ 2 -----------
-
--- A ------
-
-myInt :: ( Integer -> Integer ) -> Integer
-myInt f = f 4
-
--- B ------
-
-myInte :: Integer -> ( Integer -> Integer )
-myInte f y =  f * y
-
