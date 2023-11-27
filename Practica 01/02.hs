@@ -29,3 +29,18 @@ multInte x y =  x * y
 subInt :: Int -> ( Int -> Int )
 subInt x y = x - y
 
+-- C ------
+
+-- (Int → Int) → (Int → Int)
+
+auxSub :: Int -> Int
+auxSub x = x - 1
+
+subInte :: (Int -> Int) -> (Int -> Int)
+subInte p x = p (p x)
+
+auxSum :: Int -> Int
+auxSum x = x + 2
+
+sumInte :: (Int -> Int) -> (Int -> Int)
+sumInte p x = p (p x)
