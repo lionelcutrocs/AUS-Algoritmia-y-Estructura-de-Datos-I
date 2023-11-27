@@ -12,6 +12,7 @@ sumInt x = x + 1                    -- esta es la funcion que eligo tomar para d
 myInt :: ( Int -> Int ) -> Int
 myInt f = f 4                       -- tomo sumInt y un entero x y devuelve un entero
 
+
 restInt :: ( Int -> Int )
 restInt x = x - 2
 
@@ -20,5 +21,11 @@ myOperation f = f 5
 
 -- B ------
 
-myInte :: Integer -> ( Integer -> Integer )
-myInte f y =  f * y
+-- Int → (Int → Int)
+
+multInte :: Int -> ( Int -> Int )
+multInte x y =  x * y
+
+subInt :: Int -> ( Int -> Int )
+subInt x y = x - y
+
