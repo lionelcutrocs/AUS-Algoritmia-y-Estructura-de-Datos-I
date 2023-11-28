@@ -15,3 +15,8 @@ f x = let (y, z) = (x, x) in y
 
 a :: a -> a
 a x = x
+
+-- B ------
+
+-- greater (x,y) = if x > y then True else False
+
