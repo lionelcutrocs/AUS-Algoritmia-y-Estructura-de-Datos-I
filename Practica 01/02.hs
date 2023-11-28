@@ -11,8 +11,7 @@ sumInt x = x + 1                    -- esta es la funcion que eligo tomar para d
 
 myInt :: ( Int -> Int ) -> Int
 myInt f = f 4                       -- tomo sumInt y un entero x y devuelve un entero
-
-
+--
 restInt :: ( Int -> Int )
 restInt x = x - 2
 
@@ -38,7 +37,7 @@ auxSub x = x - 1
 
 subInte :: (Int -> Int) -> (Int -> Int)
 subInte p x = p (p x)
-
+--
 auxSum :: Int -> Int
 auxSum x = x + 2
 
@@ -67,5 +66,12 @@ orLog x y = x || y
 
 -- F ------
 
+-- en este ejemplo opero si es verdad o no lo que ingreso, segun AND u OR 
+
 -- (Int,Char) → Bool
 
+isAnd :: (Int, Char) -> Bool
+isAnd (x, c) = x > 0 && c == 'A'
+
+isOr :: (Int, Char) -> Bool
+isOr (x, c) = x < 0 || c == 'a'
