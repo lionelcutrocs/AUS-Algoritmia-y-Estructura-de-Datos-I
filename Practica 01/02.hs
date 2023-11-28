@@ -85,3 +85,13 @@ isMayor (x, y) = if x > y then x else y
 
 takeElem :: (Int, Int) -> Int
 takeElem (x, y) = y
+
+-- H ------
+
+-- Int → (Int,Int)
+
+addElem :: Int -> (Int, Int)
+addElem x = (x, 4)
+
+addInt :: Int -> (Int, Int)
+addInt x = if x > 2 then (2, x) else (x, 2)
