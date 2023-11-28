@@ -75,3 +75,7 @@ isAnd (x, c) = x > 0 && c == 'A'
 
 isOr :: (Int, Char) -> Bool
 isOr (x, c) = x < 0 || c == 'a'
+
+-- G ------
+
+-- (Int,Int) → Int
