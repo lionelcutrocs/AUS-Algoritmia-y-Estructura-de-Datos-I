@@ -49,3 +49,8 @@ sumInte p x = p (p x)
 
 -- Int → Bool
 
+isTrue :: Int -> Bool
+isTrue x = if x == 5 then True else False
+
+isNeg :: Int -> Bool
+isNeg x = if x < 0 then True else False 
