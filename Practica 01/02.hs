@@ -54,3 +54,13 @@ isTrue x = if x == 5 then True else False
 
 isNeg :: Int -> Bool
 isNeg x = if x < 0 then True else False 
+
+-- E ------
+
+-- Bool → (Bool → Bool)
+
+andLog :: Bool -> (Bool -> Bool)
+andLog False False = False
+andLog False True = False
+andLog True False = False 
+andLog True True = True
