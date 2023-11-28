@@ -20,3 +20,14 @@ a x = x
 
 -- greater (x,y) = if x > y then True else False
 
+greater :: (Int, Int) -> Bool 
+greater (x,y) = if x > y then True else False
+
+-- esta funcion lo que hace es decir si el primer elemento de la tupla es mayor al otro
+-- entonces se puede re definir como
+
+ifGreater :: (Int, Int) -> Bool
+ifGreater (x, y)
+    | x > y = True
+    | otherwise = False
+
