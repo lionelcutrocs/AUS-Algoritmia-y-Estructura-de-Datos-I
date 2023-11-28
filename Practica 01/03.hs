@@ -45,4 +45,4 @@ b (x, y) = let z = x + y in g (z, y) where g (a, b) = a - b
 -- entonces la puedo redefinir como
 
 c :: (Int, Int) -> Int
-c (x, y) = x - y
+c (x, y) = x - y 
