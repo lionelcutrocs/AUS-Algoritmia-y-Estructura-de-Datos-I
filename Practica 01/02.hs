@@ -64,3 +64,8 @@ andLog x y = x && y
 
 orLog :: Bool -> (Bool -> Bool)
 orLog x y = x || y 
+
+-- F ------
+
+-- (Int,Char) → Bool
+
