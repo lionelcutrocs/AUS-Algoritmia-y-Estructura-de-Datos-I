@@ -95,3 +95,13 @@ addElem x = (x, 4)
 
 addInt :: Int -> (Int, Int)
 addInt x = if x > 2 then (2, x) else (x, 2)
+
+-- I ------
+
+-- a → Bool
+
+isNum :: a -> Bool                 -- siempre que 'a' no tenga restriccion la tratamos como una variable polimorfica
+isNum p = True
+
+notNum :: a -> Bool
+notNum a = False
