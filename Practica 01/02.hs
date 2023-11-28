@@ -114,4 +114,4 @@ sameNum :: a -> a
 sameNum a = a
 
 sameSum :: a -> a
-sameSum x = x
+sameSum x = x 
