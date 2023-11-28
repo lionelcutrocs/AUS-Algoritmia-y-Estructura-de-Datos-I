@@ -79,3 +79,9 @@ isOr (x, c) = x < 0 || c == 'a'
 -- G ------
 
 -- (Int,Int) → Int
+
+isMayor :: (Int, Int) -> Int
+isMayor (x, y) = if x > y then x else y
+
+takeElem :: (Int, Int) -> Int
+takeElem (x, y) = y
