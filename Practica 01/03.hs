@@ -31,3 +31,6 @@ ifGreater (x, y)
     | x > y = True
     | otherwise = False
 
+-- C ------
+
+-- f (x,y) = let z = x + y in g (z,y) where g (a,b) = a − b
