@@ -60,7 +60,7 @@ isNeg x = if x < 0 then True else False
 -- Bool → (Bool → Bool)
 
 andLog :: Bool -> (Bool -> Bool)
-andLog False False = False
-andLog False True = False
-andLog True False = False 
-andLog True True = True
+andLog x y = x && y
+
+orLog :: Bool -> (Bool -> Bool)
+orLog x y = x || y
