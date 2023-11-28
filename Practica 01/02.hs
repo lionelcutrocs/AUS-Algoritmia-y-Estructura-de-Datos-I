@@ -105,3 +105,13 @@ isNum p = True
 
 notNum :: a -> Bool
 notNum a = False
+
+-- J ------
+
+-- a → a
+
+sameNum :: a -> a
+sameNum a = a
+
+sameSum :: a -> a
+sameSum x = x
