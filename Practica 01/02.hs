@@ -63,4 +63,4 @@ andLog :: Bool -> (Bool -> Bool)
 andLog x y = x && y
 
 orLog :: Bool -> (Bool -> Bool)
-orLog x y = x || y
+orLog x y = x || y 
