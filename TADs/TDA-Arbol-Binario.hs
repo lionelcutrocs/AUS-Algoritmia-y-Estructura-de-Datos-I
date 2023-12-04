@@ -28,4 +28,10 @@ addTree :: ( Ord a ) => a -> ArbolBin a -> ArbolBin a
 addTree x VacioT = NodoT x VacioT VacioT                        -- si esta vacio, creo un nodo con valor x y sub arboles
 addTree x (NodoT y izq der) | x == y = NodoT y izq der
                             | x < y = NodoT y ( addTree x izq ) der
-                            | x > y = NodoT y  izq( addTree x der ) 
+                            | x > y = NodoT y  izq( addTree x der )
+
+-- Listado in order
+
+inOrderArbol :: ( Ord a ) => ArbolBin a -> [a]
+inOrderArbol VacioT = []
+inOrderArbol ( NodoT y izq der ) = inOrderArbol izq ++ [y] ++ inOrderArbol der
