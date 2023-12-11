@@ -9,7 +9,7 @@ mkNewTree = VacioT
 
 inTree :: ( Ord a ) => a -> ArbolBin a -> Bool
 inTree x VacioT = False                                         -- sera falso cuando x no este en el arbol
-inTree x ( NodoT y izq der ) | x == y = True
+inTree x ( NodoT y izq der )  | x == y = True
                               | x < y = inTree x izq
                               | x > y = inTree x der
 
