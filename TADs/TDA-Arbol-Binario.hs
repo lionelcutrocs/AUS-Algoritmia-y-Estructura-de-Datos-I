@@ -21,8 +21,20 @@ addTree x (NodoT y izq der) | x == y = NodoT y izq der
                             | x < y = NodoT y ( addTree x izq ) der
                             | x > y = NodoT y  izq ( addTree x der )
 
--- Listado in order
+-- Recorrido in order
 
 inOrderArbol :: ( Ord a ) => ArbolBin a -> [a]
 inOrderArbol VacioT = []
 inOrderArbol ( NodoT y izq der ) = inOrderArbol izq ++ [y] ++ inOrderArbol der
+
+-- Recorrido en preorden
+
+preOrderArbol :: (Ord a) => ArbolBin a -> [a]
+preOrderArbol VacioT = []
+preOrderArbol (NodoT y izq der) = [y] ++ preOrderArbol izq ++ preOrderArbol der
+
+-- Recorrido en postorden
+
+postOrderArbol :: (Ord a) => ArbolBin a -> [a]
+postOrderArbol VacioT = []
+postOrderArbol (NodoT y izq der) = postOrderArbol izq ++ postOrderArbol der ++ [y]
